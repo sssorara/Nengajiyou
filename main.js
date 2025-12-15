@@ -3,15 +3,15 @@
 const cards = [
   // 1枚目
   {
-    front: "/assets/card1_front.png", // 表面の画像パス
-    back: "/assets/card1_back.png",   // 裏面の画像パス
+    front: "./assets/card1_front.png", // 表面の画像パス
+    back: "./assets/card1_back.png",   // 裏面の画像パス
     date: "2025年12月15日",
     author: "Taro Yamada"
   },
   // 2枚目
   {
-    front: "/assets/card2_front.png",
-    back: "/assets/card2_back.png",
+    front: "./assets/card2_front.png",
+    back: "./assets/card2_back.png",
     date: "2025年12月16日",
     author: "Hanako Suzuki"
   },
