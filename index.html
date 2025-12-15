@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>年賀状閲覧サイト</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <canvas id="confetti-canvas"></canvas>
+    <div id="app">
+      <div class="nav-arrow left" id="prev-btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M15 18l-6-6 6-6" />
+        </svg>
+      </div>
+
+      <div class="scene">
+        <div class="card" id="card">
+          <div class="card-face card-front">
+            <img id="img-front" src="" alt="Nengajo Front" />
+          </div>
+          <div class="card-face card-back">
+            <img id="img-back" src="" alt="Nengajo Back" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Info Modal -->
+      <dialog id="info-modal">
+        <div class="modal-content">
+          <button id="close-modal">×</button>
+          <h2>作品情報</h2>
+          <p><strong>制作日:</strong> <span id="info-date"></span></p>
+          <p><strong>制作者:</strong> <span id="info-author"></span></p>
+        </div>
+      </dialog>
+
+
+      <div class="nav-arrow right" id="next-btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M9 18l6-6-6-6" />
+        </svg>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
